@@ -1,5 +1,8 @@
 // Código creado por Emiliano Ezequiel Parenti
 // Se compila así:
+// gcc ./main.c -o ./sha5
+// Código creado por Emiliano Ezequiel Parenti
+// Se compila así:
 // gcc ./sha5.c -o ./sha5
 // Dar permisos de ejecución
 // chmod +x ./sha5
@@ -9,12 +12,11 @@
 // Ruta: ./sha5
 // Argumentos: 1
 // Ruta del programa: ./sha5
-// Hash: 0000000000000000000000000000000000000000000000000000000000000000
+// Hash: a3c5c5e85c194aef9627fd1902254e0c7f3e2c04d10322e8fda9852159e49c51
 // 2 elevado a la: 37
 // Menor que tantos bits positivos: 77
 // Microsegundos de espera para menor uso de CPU: 101234
-// ./sha5 0000000000000000000000000000000000000000000000000000000000000000 37 77 101234
-
+// ./sha5 a3c5c5e85c194aef9627fd1902254e0c7f3e2c04d10322e8fda9852159e49c51 37 77 101234
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -132,20 +134,21 @@ int main(int argc, char *argv[]){
 	printf("Argumentos: %i\n",argc);
 
 	if(argd==0){
-		char* hash_nulo = "0000000000000000000000000000000000000000000000000000000000000000";
+		//char* hash_nulo =   "0000000000000000000000000000000000000000000000000000000000000000";
+		char* hash_ejemplo = "a3c5c5e85c194aef9627fd1902254e0c7f3e2c04d10322e8fda9852159e49c51";
 		int potencia = 37;
 		int bits_ejemplo = 77;
 		int microsegundos = 101234;
 
 		printf("Ruta del programa: %s\n",ruta);
-		printf("Hash: %s\n",hash_nulo);
+		printf("Hash: %s\n",hash_ejemplo);
 		printf("2 elevado a la: %i\n",potencia);
 		printf("Menor que tantos bits positivos: %i\n",bits_ejemplo);
 		printf("Microsegundos de espera para menor uso de CPU: %i\n",microsegundos);
 		printf(
 			"%s %s %i %i %i\n",
 			ruta,         // Ruta del programa
-			hash_nulo,    // Hash
+			hash_ejemplo, // Hash de ejemplo
 			potencia,     // Potencia: 2^29
 			bits_ejemplo, // Menor que tantos bits positivos
 			microsegundos // Microsegundos de espera para menor uso de CPU
