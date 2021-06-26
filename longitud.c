@@ -1,3 +1,5 @@
+// Longitud usando strings
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -50,7 +52,11 @@ int main(int a, char *b[]){
 	unsigned short longishort = 0;
 	unsigned short longitud_maxima = 6;
 	if(c==0){
-		printf("0: Cadena");
+		char* b0 = "0000000000000000000000000000000000000000000000000000000000000000";
+		char* b1 = "2";
+		printf("0 Cadena: %s\n",b0);
+		printf("1 Longitud maxima: %s\n",b1);
+		printf("%s %s %s\n",ruta,b0,b1);
 	}
 	if(c>=1){
 		a0 = d[0]; // arg 0: Cadena
