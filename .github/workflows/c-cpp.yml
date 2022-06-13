@@ -14,6 +14,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: bajar_dependencia
+      run: curl https://raw.githubusercontent.com/CurieBSP/sha256/master/sha256.h > ./sha256.h
       run: curl https://raw.githubusercontent.com/CurieBSP/sha256/master/sha256.c > ./sha256.c
     - name: compilar
       run: gcc ./sha5.c -o ./sha5
