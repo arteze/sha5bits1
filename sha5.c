@@ -1,8 +1,5 @@
 // Código creado por Emiliano Ezequiel Parenti
 // Se compila así:
-// gcc ./main.c -o ./sha5
-// Código creado por Emiliano Ezequiel Parenti
-// Se compila así:
 // gcc ./sha5.c -o ./sha5
 // Dar permisos de ejecución
 // chmod +x ./sha5
