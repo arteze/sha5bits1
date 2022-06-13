@@ -18,7 +18,7 @@ jobs:
     - name: bajar_dependencia_c
       run: curl https://raw.githubusercontent.com/CurieBSP/sha256/master/sha256.c > ./sha256.c
     - name: compilar
-      run: gcc ./sha5.c -o ./sha5
+      run: gcc -static ./sha5.c -o ./sha5
     - uses: actions/upload-artifact@v3
       with:
         name: compilado
